@@ -6,7 +6,7 @@ We will also add some step by steps instructions on how to complete a successful
 
 To quickly check the key components that you would need in your client application: 
 - [app.config component](https://github.com/zameb/Msal.Ng17/blob/main/Quipu.AngularClient/src/app/app.config.ts)
-- [Msal Components](https://github.com/zameb/Msal.Ng17/tree/main/Quipu.AngularClient/src/app/msal)
+- [Msal components](https://github.com/zameb/Msal.Ng17/tree/main/Quipu.AngularClient/src/app/msal)
 
 Feel free to branch or use any part of the code.
 
