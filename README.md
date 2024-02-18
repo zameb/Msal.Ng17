@@ -1,7 +1,8 @@
 # Angular Integration with MSAL
 
 This repository shows the key components of a working integration using Angular 17 and MSAL to access and use Microsoft Entra accounts.
-This is a work in progress, we will complete the examples and update to new Angular and MSAL versions as soon as we can!
+This is a work in progress, not a running demo yet.
+We will complete the examples and update to new Angular and MSAL versions as soon as we can!
 We will also add some step by steps instructions on how to complete a successful integration.
 
 To quickly check the key components that you would need in your Angular client application: 
