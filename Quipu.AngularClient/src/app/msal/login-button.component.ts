@@ -5,6 +5,7 @@ import { msalConfigScopes } from './msal-config';
 
 @Component({
   selector: 'app-login-button',
+  standalone: true,
   template: `
     <button (click)="handleLogin()">
       Login

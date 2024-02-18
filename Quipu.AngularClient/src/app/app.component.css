@@ -1,0 +1,26 @@
+.app-container {
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.toolbar-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-content {
+  display: flex;
+}
+
+.menu-container {
+  width: 200px;
+  background-color: #d9edf7;
+  padding: 10px;
+}
+
+main {
+  flex-grow: 1;
+  padding: 10px;
+  background-color: #ffffff;
+}

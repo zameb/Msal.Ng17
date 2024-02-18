@@ -1,0 +1,20 @@
+<div class="app-container">
+  <header>
+    <div class="toolbar-row">
+      <h3>Angular - MSAL Integration</h3>
+      <div *ngIf="!isSigningIn">
+        <app-logout-button *ngIf="isAuthenticated"></app-logout-button>
+        <app-login-button *ngIf="!isAuthenticated"></app-login-button>
+      </div>
+      <div *ngIf="isSigningIn">...Signing in...</div>
+    </div>
+  </header>
+
+  <div class="app-content" *ngIf="isInitialized">
+    <menu class="menu-container">
+    </menu>
+    <main>
+      <router-outlet></router-outlet>
+    </main>
+  </div>
+</div>
