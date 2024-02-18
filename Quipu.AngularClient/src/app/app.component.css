@@ -1,6 +1,10 @@
 .app-container {
   background-color: #f0f0f0;
   padding: 20px;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Ajuste la altura del contenedor principal */
 }
 
 .toolbar-row {
@@ -11,11 +15,12 @@
 
 .app-content {
   display: flex;
+  flex-grow: 1;
 }
 
 .menu-container {
   width: 200px;
-  background-color: #d9edf7;
+  background-color: #f0f0f0;
   padding: 10px;
 }
 
@@ -23,4 +28,5 @@ main {
   flex-grow: 1;
   padding: 10px;
   background-color: #ffffff;
+  overflow-y: auto;
 }
