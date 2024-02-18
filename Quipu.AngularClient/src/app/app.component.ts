@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { MsalBroadcastService, MsalService } from '@azure/msal-angular';
 import { InteractionStatus } from '@azure/msal-browser';
 import { Subscription } from 'rxjs';
@@ -15,7 +15,10 @@ import { LogoutButtonComponent } from './msal/logout-button.component';
     CommonModule,
     RouterOutlet,
     LoginButtonComponent,
-    LogoutButtonComponent
+    LogoutButtonComponent,
+    RouterLink,
+    RouterLinkActive,
+    RouterOutlet
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
@@ -37,14 +40,14 @@ export class AppComponent {
 
   ngOnInit(): void {
     publicClientApp.initialize().then(() => {
-      console.log('MSAL well initialized');
+      console.log('MSAL initialized');
       this.isInitialized = true;
     });
 
     this.msalSubscription = this.msalBroadcastService.inProgress$
       .subscribe((status: InteractionStatus) => {
         this.isSigningIn = true;
-        console.log('Interaction status:', status);
+        console.log('MSAL status:', status);
         if (status === InteractionStatus.None || status === InteractionStatus.Startup) {
           this.isAuthenticated = this.msalService.instance.getAllAccounts().length > 0;
           this.isSigningIn = false;

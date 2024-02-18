@@ -11,8 +11,12 @@
   </header>
 
   <div class="app-content" *ngIf="isInitialized">
-    <menu class="menu-container">
-    </menu>
+    <nav class="menu-container">
+      <ul>
+        <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
+        <li><a routerLink="/companies" routerLinkActive="active">Companies</a></li>
+      </ul>
+    </nav>
     <main>
       <router-outlet></router-outlet>
     </main>
