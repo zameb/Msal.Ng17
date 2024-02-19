@@ -25,12 +25,9 @@ import { LogoutButtonComponent } from './msal/logout-button.component';
 })
 
 export class AppComponent {
-  companyId: string = "";
   isAuthenticated = false;
   isSigningIn = false;
   isInitialized = false;
-  isCallingApi = false;
-  isValidatingToken = false;
 
   private msalSubscription: Subscription = null!;
 
