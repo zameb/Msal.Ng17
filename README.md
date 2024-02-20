@@ -16,8 +16,6 @@ For a quick overview of the key components needed in your Angular client applica
 Feel free to branch or use any part of the code.
 
 And lastly, if you'd like to support my work...
-
-<a href="https://www.buymeacoffee.com/zameb" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
-
+https://www.buymeacoffee.com/zameb
 
 Thanks
