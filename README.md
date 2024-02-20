@@ -1,7 +1,7 @@
 # Angular Integration with MSAL
 
 This repository showcases the key components of a functional integration using Angular 17 and MSAL to access and utilize Microsoft Entra accounts. 
-It's a work in progress as we aim to address the following issue: [link to the issue].
+It's a work in progress as we aim to address the following issue: https://github.com/AzureAD/microsoft-authentication-library-for-js/issues/6719#issuecomment-1950231908.
 
 We will be completing the examples and updating to the latest Angular and MSAL versions as soon as possible! 
 Additionally, we plan to provide step-by-step instructions on achieving a successful integration.
